@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <script src="https://cdn.rawgit.com/mrdoob/three.js/9f2fe17/examples/jsm/loaders/GLTFLoader.js"></script>
+
+  <title>GLTF Model Display</title>
+</head>
+<body>
+  <div id="canvas-container"></div>
+
+  <script>
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    const canvasContainer = document.getElementById('canvas-container');
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    canvasContainer.appendChild(renderer.domElement);
+
+    const loader = new THREE.GLTFLoader();
+
+    // Use the RawGit URL for the GLTF file
+    loader.load('https://cdn.jsdelivr.net/gh/nourwindeco/3dchain/Sans_titre.gltf', (gltf) => {
+      const model = gltf.scene;
+      scene.add(model);
+
+      // Set camera position to look at the model
+      const box = new THREE.Box3().setFromObject(model);
+      const center = box.getCenter(new THREE.Vector3());
+      camera.position.set(center.x, center.y, box.max.z + 2);
+      camera.lookAt(center);
+
+      // Add ambient light to the scene
+      const ambientLight = new THREE.AmbientLight(0x404040);
+      scene.add(ambientLight);
+
+      // Add directional light to the scene
+      const directionalLight = new THREE.DirectionalLight(0xffffff);
+      directionalLight.position.set(1, 1, 1).normalize();
+      scene.add(directionalLight);
+    });
+
+    const animate = () => {
+      requestAnimationFrame(animate);
+      renderer.render(scene, camera);
+    };
+
+    animate();
+  </script>
+</body>
+</html>
