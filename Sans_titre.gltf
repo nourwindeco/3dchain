@@ -1,0 +1,247 @@
+{
+    "asset": {
+        "copyright": "2021 (c) Adobe Inc.",
+        "generator": "Adobe Substance 3D Stager - 81b5aea6a2d196cd3dd1bf34b1039a7c75b52a74",
+        "version": "2.0"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 322112,
+            "type": "VEC3",
+            "max": [
+                -2.0047013759613039,
+                0.6439882516860962,
+                0.03604699298739433
+            ],
+            "min": [
+                -2.029702663421631,
+                -0.4960116744041443,
+                -0.013953005895018578
+            ]
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 322112,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 322112,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5125,
+            "count": 324768,
+            "type": "SCALAR",
+            "max": [
+                322111.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 3865344,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 3865344,
+            "byteLength": 3865344,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 7730688,
+            "byteLength": 2576896,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 10307584,
+            "byteLength": 1299072,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 11606656,
+            "uri": "Sans_titre_binary.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "perspective": {
+                "znear": 0.0000228273947868729,
+                "yfov": 0.3995896875858307,
+                "zfar": 2.0,
+                "aspectRatio": 1.7777777910232545
+            },
+            "type": "perspective",
+            "name": "working_cam"
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.010410943068563939,
+                    0.008705493062734604,
+                    0.009079653769731522,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.14002801477909089
+            },
+            "name": "black-nickel",
+            "doubleSided": true,
+            "extensions": {
+                "KHR_materials_specular": {
+                    "specularColorFactor": [
+                        0.010410943068563939,
+                        0.008705493062734604,
+                        0.00907965376973152
+                    ]
+                }
+            }
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.01858782209455967,
+                    0.01818801648914814,
+                    0.018995655700564386,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.14002801477909089
+            },
+            "name": "grey",
+            "doubleSided": true,
+            "extensions": {
+                "KHR_materials_specular": {
+                    "specularColorFactor": [
+                        0.01858782209455967,
+                        0.01818801648914814,
+                        0.018995655700564386
+                    ]
+                }
+            }
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.006993731018155813,
+                    0.005841725971549749,
+                    0.0071958755142986778,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.1444881707429886
+            },
+            "name": "natural_aluminum",
+            "doubleSided": true,
+            "extensions": {
+                "KHR_materials_specular": {
+                    "specularColorFactor": [
+                        0.006993731018155813,
+                        0.005841725971549749,
+                        0.0071958755142986778
+                    ]
+                }
+            }
+        },
+        
+        {"pbrMetallicRoughness": {
+            "baseColorFactor": [
+                0.9386848211288452,
+                0.913098156452179,
+                0.7681514024734497,
+                1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 0.0
+        },
+        "name": "wire_088177027.001",
+        "doubleSided": true,
+        "extensions": {
+            "KHR_materials_specular": {
+                "specularColorFactor": [
+                    0.07999999821186066,
+                    0.07999999821186066,
+                    0.07999999821186066
+                ]
+            }
+        }
+    }
+    ],
+    "meshes": [
+        {
+            "name": "roll_zep-252E001",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 3
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "translation": [
+                0.4690404534339905,
+                0.256507933139801,
+                -0.019892292097210885
+            ],
+            "rotation": [
+                -0.12059047073125839,
+                0.379409521818161,
+                0.04995020851492882,
+                0.9159756302833557
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "camera": 0,
+            "name": "working_cam_n3d"
+        },
+        {
+            "translation": [
+                1.1939542293548585,
+                0.0,
+                -0.8902743458747864
+            ],
+            "mesh": 0,
+            "name": "roll_zep%2E001"
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0,
+                1
+            ],
+            "name": "scene"
+        }
+    ],
+    "scene": 0,
+    "extensionsUsed": [
+        "KHR_materials_specular"
+    ]
+}
